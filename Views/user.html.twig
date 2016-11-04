@@ -1,0 +1,21 @@
+{{ include('Include/header.html.twig') }}
+<!-- CONTENEUR -->
+<div class="container">
+    <img src="resources/img/ticket.png" id="image">
+    <form action="UserController.php?action=create" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Login</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Login" name="login">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe" name="password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword2">Mot de passe (validation)</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe" name="password_verification">
+        </div>
+        <input type="submit" value="Inscription" class="btn btn-success">
+    </form>
+</div>
+{{ include('Include/footer.html.twig') }}

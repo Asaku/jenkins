@@ -1,0 +1,20 @@
+{{ include('Include/header.html.twig') }}
+<!-- CONTENEUR -->
+<div class="container">
+    <table class="table">
+        <h2>Ticket fermer</h2>
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>status</th>
+        </tr>
+        {% for ticket in tickets %}
+            <tr>
+                <td>{{ ticket.id }}</td>
+                <td>{{ ticket.name }}</td>
+                <td>{{ ticket.status }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{{ include('Include/footer.html.twig') }}
